@@ -168,7 +168,7 @@
 #content.aiAuto section.type1 .gridCol3 .secDate:nth-child(2)::after {right:0;} 
 #content.aiAuto section.type1 .gridCol3 .secDate .txt p {margin:1rem 0;}
  /* tapSwiper */
-.tab-container .tabs {-webkit-display: grid; display: grid; gap:3rem; grid-template-columns: repeat(5, 1fr); -webkit-grid-template-columns: repeat(5, 1fr);}
+.tab-container .tabs {display: -webkit-grid; display: grid; gap:3rem; grid-template-columns: repeat(5, 1fr); -webkit-grid-template-columns: repeat(5, 1fr);}
 .tab-container .tabs .tab {padding:2rem 3rem; border-radius: 2rem; cursor: pointer; background:var(--white); border:1px solid var(--line_gray1); -webkit-display: flex; display: flex; align-items: center;}
 .tab-container .tabs .tab h4 {font-size: 2.2rem; margin-left: 1rem;}
 .tab-container .tabs .tab.active {border-color: var(--purple);}
@@ -264,7 +264,7 @@
 /* ---- property_End ---- */
 
 /* ---- portfolio_Start ---- */
-.ptfolio .ptBox {-webkit-display: grid; display: grid; grid-template-columns: 3fr 1fr 160px; border:1px solid var(--line_gray1); padding:2rem; align-items: center; -webkit-grid-template-columns: 3fr 1fr 160px;}
+.ptfolio .ptBox {display: -webkit-grid; display: grid; grid-template-columns: 3fr 1fr 160px; border:1px solid var(--line_gray1); padding:2rem; align-items: center; -webkit-grid-template-columns: 3fr 1fr 160px;}
 .ptfolio .ptBox .tag span {background:var(--footer_blue); font-size: 1.2rem; padding:.2rem 1rem; border-radius: 4px; margin-right:.5rem;}
 .ptfolio .ptBox dl dt {font-weight: bold; margin:.5rem 0;}
 .ptfolio .ptBox .txt {-webkit-display: flex; display: flex; gap:.5rem; flex-flow: row wrap;}
@@ -289,7 +289,7 @@
 
 /* maypage */
 .myWrap .myprofile {background:var(--bg_Gray); padding:2rem; border-radius: 1rem; -webkit-display: flex; display: flex; align-items: center; justify-content: space-between; margin:0 0 5rem; gap: 2rem;     flex-flow: row wrap;}
-.myWrap .myprofile .mystyle {-webkit-display: grid; display: grid; grid-template-columns: repeat(4, 1fr); -webkit-grid-template-columns: repeat(4, 1fr); gap: 6rem; text-align: center;}
+.myWrap .myprofile .mystyle {display: -webkit-grid; display: grid; grid-template-columns: repeat(4, 1fr); -webkit-grid-template-columns: repeat(4, 1fr); gap: 6rem; text-align: center;}
 .myWrap .myprofile .mystyle p {color:var(--text_gray);}
 .myWrap .myprofile .mystyle p > b {color:var(--text);}
 /* profileImg */
@@ -300,9 +300,9 @@
 #uploadText {position: absolute; color: var(--white); font-size: 1rem; font-weight: bold; bottom:0; padding:1rem 2.2rem; white-space: nowrap; text-align: center; background:var(--opacity_Lb);}
 .profileUser {margin-left:1rem;}
 /* myBox */
-.myBox {-webkit-display: grid; display: grid; -webkit-grid-template-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap:2rem;}
+.myBox {display: -webkit-grid; display: grid; -webkit-grid-template-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap:2rem;}
 .myBox h5 {margin:0 0 3rem;}
-.myBox .gridCol3 {-webkit-display: grid; display: grid; grid-auto-flow: dense; gap: 2rem; align-items: stretch;}
+.myBox .gridCol3 {display: -webkit-grid; display: grid; grid-auto-flow: dense; gap: 2rem; align-items: stretch;}
 .myBox .box {border-radius: 1.5rem; border:1px solid var(--line_gray1); padding:1.5rem;}
 .myBox .box .num {padding:.2rem .8rem; background: #EAEBFD; border-radius: 50px; margin-left: 1rem;}
 .myBox .box >p {color:var(--text_gray);}
@@ -820,7 +820,7 @@
   #content.property .secWrap.flex_sb .secArea > .flex_sb >*:first-child {margin-bottom: 2rem;}
   #content.property.type4 section .secWrap > .grid2 .btnWrap,
   #content.property section .secWrap.flex_sb .left .gridCol4,
-  #content.property section .secWrap.flex_sb .left .gridCol5 {-webkit-grid-template-columns: 1fr; grid-template-columns: 1fr;}
+  /* #content.property section .secWrap.flex_sb .left .gridCol5 {-webkit-grid-template-columns: 1fr; grid-template-columns: 1fr;} */
   #content.property section .secWrap.flex_sb .left .gridCol5 {margin:2rem 0 0;}
   #content.property section .secWrap.flex_sb .left .amountWrap {flex-flow: row wrap;}
   #content.property .amountWrap .amountArea.St01 {margin:0 0 1rem;}

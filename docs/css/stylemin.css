@@ -133,8 +133,8 @@ body	{ font-family: 'NanumSquareAc', sans-serif ; font-size: 1.6rem; overflow-x:
 .flexBox {flex-flow: row wrap; justify-content: center; align-items: stretch; gap: 3rem;}
 
 /* grid */
-.grid {-webkit-display: grid; display: grid !important; gap: 3rem;}
-.grid2 {-webkit-display: grid; display: grid !important; grid-auto-flow: dense; gap: 2rem; align-items: stretch;}
+.grid {display: -webkit-grid; display: grid !important; gap: 3rem;}
+.grid2 {display: -webkit-grid; display: grid !important; grid-auto-flow: dense; gap: 2rem; align-items: stretch;}
 .gridCol2 {-webkit-grid-template-columns:1fr 1fr; grid-template-columns:1fr 1fr;}
 .gridCol3 {-webkit-grid-template-columns: repeat(3, 1fr);grid-template-columns: repeat(3, 1fr); }
 .gridCol4 {-webkit-grid-template-columns: repeat(4, 1fr); grid-template-columns: repeat(4, 1fr); }
