@@ -573,8 +573,8 @@
   .hide {display: none;}
   .wd83 {width:100%;}
 
-  .gridCol2, .gridCol3, .gridCol4 , .gridCol5 {-webkit-grid-template-columns: 1fr; grid-template-columns: 1fr;}
-
+  .gridCol2, .gridCol3, .gridCol5 {-webkit-grid-template-columns: 1fr; grid-template-columns: 1fr;}
+  /* .gridCol4 ,  */
   .mb30 {margin:0 0 2rem;}
   .capBox {margin:2rem 0 0;}
   /* style */
@@ -821,7 +821,7 @@
   #content.property.type4 section .secWrap > .grid2 .btnWrap,
   #content.property section .secWrap.flex_sb .left .gridCol4,
   /* #content.property section .secWrap.flex_sb .left .gridCol5 {-webkit-grid-template-columns: 1fr; grid-template-columns: 1fr;} */
-  #content.property section .secWrap.flex_sb .left .gridCol5 {margin:2rem 0 0;}
+  #content.property section .secWrap.flex_sb .left .gridCol5 {margin:0 0 2rem 0;}
   #content.property section .secWrap.flex_sb .left .amountWrap {flex-flow: row wrap;}
   #content.property .amountWrap .amountArea.St01 {margin:0 0 1rem;}
   #content.property section .secWrap.flex_sb .secArea .inputFlex {flex-flow: column;}
