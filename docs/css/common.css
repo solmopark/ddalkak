@@ -910,7 +910,7 @@ popup Style
   /* property */
   #content.property .secWrap.flex_sb .secArea .flex_sb >*, #content.property .secWrap.flex_sb .secArea .flex_sb .next {width:100%;}
   #content.property.type2 section .secTitle.flex_sb,
-  #content.property .secWrap.flex_sb .secArea > .flex_sb {flex-flow: column;}
+  #content.property .secWrap.flex_sb .secArea > .flex_sb {flex-flow: column; height: fit-content;}
   #content.property .secWrap.flex_sb .secArea > .flex_sb >*:first-child {margin-bottom: 2rem;}
   #content.property.type4 section .secWrap > .grid2 .btnWrap,
   #content.property section .secWrap.flex_sb .left .gridCol4,
