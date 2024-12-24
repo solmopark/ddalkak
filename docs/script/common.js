@@ -502,3 +502,62 @@ function User__Profile (){
   });
 }
 User__Profile();
+
+
+//popup_script
+const popupButton = document.getElementById('popupButton');
+// 팝업창
+const popup = document.getElementById('popup');
+// 닫기 버튼
+const closeButton = document.getElementById('closeButton');
+
+// 팝업 열기
+popupButton.addEventListener('click', () => {
+    popup.style.display = 'flex';
+});
+
+// 팝업 닫기
+closeButton.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
+// 팝업 바깥 부분 클릭 시 닫기
+window.addEventListener('click', (event) => {
+    if (event.target === popup) {
+        popup.style.display = 'none';
+    }
+});
+
+// 페이지네이션
+let currentPage = 1;
+const totalPages = 10;
+
+const currentPageElement = document.querySelector('.current-page');
+const totalPagesElement = document.querySelector('.total-pages');
+const leftArrow = document.querySelector('.arrow.left');
+const rightArrow = document.querySelector('.arrow.right');
+
+function updatePagination() {
+    currentPageElement.textContent = currentPage;
+    totalPagesElement.textContent = totalPages;
+
+    // 비활성화 처리
+    leftArrow.disabled = currentPage === 1;
+    rightArrow.disabled = currentPage === totalPages;
+}
+
+leftArrow.addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        updatePagination();
+    }
+});
+
+rightArrow.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+        currentPage++;
+        updatePagination();
+    }
+});
+
+updatePagination();

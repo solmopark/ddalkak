@@ -338,6 +338,83 @@
 .serviceBox .payInput .selectBox .select {width:100%;}
 /* ---- payment_End ---- */
 
+
+/* 
+----------------
+popup Style
+20241216
+----------------
+*/
+.popup {/*display: none;*/ display:flex;  position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center; transition:all .3s ease; z-index: 500;}
+.popup-content {background-color: var(--white); border-radius: 10px; text-align: center; width:650px;}
+.popupWrap .pop-head {-webkit-display: flex;  display: flex; justify-content: space-between; background:var(--bg_pop); padding:2rem; border-radius: 1rem 1rem 0 0; line-height: 100%; font-weight: 2rem;}
+.popupWrap .popup .title h3 {margin:3rem 0 2rem;}
+.popupWrap .popup .popup-wrap.flex_sb {flex-flow: row wrap; gap:2rem; padding:3rem; width:100%;}
+.popupWrap .popup .popup-wrap.flex_sb .popBox {border:1px solid var(--line_gray1); border-radius: 2rem; padding:3.4rem 2rem; width:calc(96% /2 );-webkit-display: flex;  display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease-in-out;}
+.popupWrap .popup .popup-wrap.flex_sb .popBox .item {display:flex; flex-flow: column; font-size: 1.8rem; color:var(--line_gray2);}
+.popupWrap .popup .popup-wrap.flex_sb .popBox .item img {width:3rem; height: 3rem;}
+
+/* popupBtn */
+.Pop_close, .close-btn,.tabBtn { transition: all 0.3s ease-in-out;}
+.Pop_close {font-size: 1.6rem; color:var(--purple); padding:2rem 0; width:100%; border-radius: 0 0 1rem 1rem; border-top:1px solid var(--line_gray2);}
+.close-btn {font-size: 2.4rem; cursor: pointer;}
+
+/* hover 및 on */
+.popupWrap .popup .popup-wrap.flex_sb .popBox:hover,
+.popupWrap .popup .popup-wrap.flex_sb .popBox.on {box-shadow: 0px 0px 4px rgb(79 84 196 / 100%);}
+.popupWrap .popup .popup-wrap.flex_sb .popBox:hover .item,
+.popupWrap .popup .popup-wrap.flex_sb .popBox.on .item {color:var(--purple); }
+.popupWrap .popup .popup-wrap.flex_sb .popBox:hover .item img,
+.popupWrap .popup .popup-wrap.flex_sb .popBox:hover .imgArea,
+.popupWrap .popup .popup-wrap.flex_sb .popBox.on .item img,
+.popupWrap .popup .popup-wrap.flex_sb .popBox.on .imgArea {filter:var(--filter2);}
+
+.close-btn:hover {transform: scale(1.1);}
+.Pop_close:hover {background: var(--bg_Lpurple);}
+.Pop_close.St2:hover {background: var(--white);}
+
+/* ETF상품조회 */
+.popup .popup-content.wd140 {width:1400px;}
+.popup .popup-content .tabWrap .bg_gsky {margin:2rem 3rem;}
+.popup .popup-content .tabWrap .bg_gsky .select,
+.popup .popup-content .tabWrap .bg_gsky input {background-color:var(--white);}
+.popup .popup-content .tabWrap .bg_gsky .searchBox fieldset >* {margin-right:1rem;}
+.popup .popup-content .tabWrap .bg_gsky .searchBox fieldset >*:last-child {margin-right:0;}
+.popup .popup-content .tabWrap .bg_gsky .btn_4 {border-radius: .5rem; width:10rem;}
+.popup .popup-content .tabWrap .tabs{padding:0 3rem;}
+.popup .popup-content .tabWrap .tab-content {padding:2rem 3rem;}
+/* tabs */
+.tabWrap {height: 630px; max-height: 750px; overflow-x: auto;}
+.tabs {-webkit-display: flex;  display: flex; justify-content: space-around;}
+.tabBtn {border-bottom:1px solid var(--line_gray2); color:var(--text_gray); padding: 1.6rem 0; width: 100%; font-size: 1.6rem;}
+.tabBtn.active {color:var(--navy); border-color:var(--navy);}
+.tab-content {-webkit-display: flex;  display: flex; flex-direction: column; gap: 20px; padding:2rem;}
+.tab-content .btnWrap .btnBox >* {width: auto;}
+.tab-content .selectBox .select {width: fit-content; font-size: 1.4rem; border:none; color:var(--text_gray);}
+.tab-content .total {font-size: 2rem; font-weight: bold;}
+.tab-content .total small {font-weight: normal; font-size: 1.6rem;}
+.tab-pane {display: none; border:1px solid var(--line_sky); padding: 3rem; border-radius: 1.5rem;}
+.tab-pane.active {display: block;}
+.tab-pane .tableArea3 .tg thead tr >* {padding: .5rem 1.5rem;}
+.tabList {display:flex; flex-flow: column; align-items: flex-start;}
+.tabList p {font-weight: bold; margin: .5rem 0; font-size: 1.8rem;}
+.tabUp {position: relative; margin-right: 2rem;}
+.tabUp::after{display: inline-block; position: absolute; content:''; width:20px; height: 20px; /*right: 0px;*/ background: center / contain no-repeat url('../image/tabup_icon.png');}
+.tabUp.cen::after {top:20px;}
+
+
+
+
+/* pagenation */
+.table_page {-webkit-display: flex;  display: flex; align-items: center; justify-content: center; gap: 1rem;margin-top:2rem;}
+.table_page .arrow {font-size: 2rem; background-color:var(--bg2); border: 1px solid var(--line_gray1); padding: 1px; cursor: pointer; transition: background-color 0.3s, color 0.3s; border-radius: .8rem; color: var(--navy_type2); }
+.table_page .arrow:hover {background-color: var(--dark_navy); color: var(--white);}
+.table_page .page-info {font-size: 1.6rem; width:50px; text-align: center;}
+.table_page .current-page, .table_page .total-pages {color: var(--navy_type2);}
+.table_page .arrow:disabled {cursor: not-allowed; color: #aaa;}
+.pageWrap, .pageWrap .left {-webkit-display: flex;  display: flex; align-items: center;}
+
+
 /* -------------------- media -------------------- */
 @media (max-width:1400px) {
   h3 {font-size: 2.5rem;}
@@ -389,6 +466,9 @@
   #content.property .secWrap.flex_sb >* {width:100%;}
   #content.property .amountWrap .amountArea.St01 {width:49%;}
   #content section .chartWrap .secArea.wd45 {width: -webkit-fill-available; margin:0 0 2rem;}
+
+  /* popup */
+  .popup .popup-content.wd140 {width: -webkit-fill-available; margin: 0 2rem;}
 }
 
 @media (max-width:1200px) {
@@ -506,7 +586,6 @@
   #subvisual.sub02 {background-position: center right 20%;}
 
   /* btn */
-  .btnWrap {flex-flow: row wrap;}
   .btnWrap .btnBox >* {width: inherit;}
 
   /* table */
@@ -567,6 +646,10 @@
   /* mypage */
   .myWrap .myprofile .btn_3 {width:-webkit-fill-available;}
   .serviceBox h2 {font-size: 2.8rem;}
+
+  /* popup */
+  .popup .popup-content.wd140 {width: -webkit-fill-available; margin: 0 2rem;}
+  .tab-content .total {font-size: 1.8rem;}
 }
 
 @media (max-width:700px){
@@ -586,6 +669,7 @@
 
   /* btn  */  
   .btnWrap .btnBox.mlAuto {margin:1rem 0 0;}
+  .tab-pane .btnWrap .btnBox.mlAuto {margin-left: auto;}
   /* wrap */
   .mainWrap > p br {display:none;}
 
@@ -601,7 +685,7 @@
   #footer ul.inner {flex-flow:row wrap; }
 
   /* pagenation */
-  .pagination li a {padding: 0.8rem 1.1rem; font-size:1.2rem;}
+  .table_page li a {padding: 0.8rem 1.1rem; font-size:1.2rem;}
 
   /* btn */
   .btn01 {border-radius: 0.5rem; white-space: nowrap;}
@@ -703,6 +787,15 @@
   .payInput {width: -webkit-fill-available;}
   .serviceBox .payInput .input_box .Check p {width: 78%;}
   #content.payment section .serviceBox .checkEvent, #content.payment section .serviceBox .prom {padding:1.25rem 2rem;}
+  
+  /* popup */
+  .popup-content {width:-webkit-fill-available;margin: 0 2rem;}
+  .popupWrap .pop-head {padding: 1.5rem 2rem;}
+  .popupWrap .popup .title h3 {margin: 2rem 0 1rem;}
+  .popupWrap .popup .popup-wrap.flex_sb {padding: 2rem;}
+  .popupWrap .popup .popup-wrap.flex_sb .popBox {border-radius: 1rem; padding: 2.5rem 1.5rem; width: calc(46.5%);}
+  .Pop_close {padding:1.5rem 2rem;}
+  .tab-pane .btnWrap .txt i {margin-right:.5rem;}
 }
 
 @media all and (max-width:480px) {
@@ -721,7 +814,7 @@
   h6 {font-size: 1.5rem;}
   .decoText {font-size:3rem;}
   .decoText01, .decoText02, .decoText03 {font-size: 1.4rem;}
-  .up, .down , .bottomBtn >* {font-size: 1.5rem !important;}
+  .up, .down , .bottomBtn >*,  .Pop_close.St2 >*{font-size: 1.5rem !important;}
   p,.selectBox .select, .amountWrap .amountArea p ,
   .tableArea .tg tbody tr td ,.tableArea2 .tg tbody tr td ,
   .tableArea3 .tg tbody tr td, .textArea2,
@@ -736,7 +829,7 @@
   .btn01 {padding: 1.4rem 1rem;}
   .btnmore span, .btngo span  {font-size: 1.4rem;}
   .btnmore, .btngo {width: 100%; padding: 0.8rem 2rem; border-radius: .6rem;}
-  .bottomBtn >* {width: -webkit-fill-available;}
+  .bottomBtn >*,  .Pop_close.St2 >*{width: -webkit-fill-available;}
   .btnWrap .btnBox {flex-flow: row wrap; gap: 1rem; margin: 0; width:100%;}
   .btnWrap .btnBox >*, .btnWrap .btnBox.mlAuto >* {margin:0;}
   .btnWrap .btnBox.mlAuto >* {width:100%;}
@@ -761,7 +854,8 @@
   .subNav.flex.pt18 {padding-top: 12rem; flex-flow: row wrap;}
 
   /* input */
-  .searchBox .selectBox .select, .searchBox input[type="text"] {font-size: 1.4rem;}
+  .searchBox .selectBox .select, .searchBox input[type="text"] ,
+  .tab-content .total small{font-size: 1.4rem;}
   .searchInBox img {right:5%;}
 
   /* visual */
@@ -821,7 +915,7 @@
   #content.property.type4 section .secWrap > .grid2 .btnWrap,
   #content.property section .secWrap.flex_sb .left .gridCol4,
   /* #content.property section .secWrap.flex_sb .left .gridCol5 {-webkit-grid-template-columns: 1fr; grid-template-columns: 1fr;} */
-  #content.property section .secWrap.flex_sb .left .gridCol5 {margin:0 0 2rem 0;}
+  #content.property section .secWrap.flex_sb .left .gridCol5 {margin:1rem 0 2rem 0;}
   #content.property section .secWrap.flex_sb .left .amountWrap {flex-flow: row wrap;}
   #content.property .amountWrap .amountArea.St01 {margin:0 0 1rem;}
   #content.property section .secWrap.flex_sb .secArea .inputFlex {flex-flow: column;}
@@ -839,6 +933,7 @@
   /* property */
   .planDay.flex {flex-flow: column;}
   .planDay .dayinput {margin-bottom:1rem;}
+  .planDay .dayinput:last-child {margin-bottom: 0;}
   .planDay.flex .text {display:none;}
 
   .exChart ul.grid2.gridCol4 {width:-webkit-fill-available; -webkit-grid-template-columns: repeat(2, 1fr); grid-template-columns: repeat(2, 1fr);}
@@ -850,10 +945,14 @@
   .ptfolio .ptBox .txt.flex {margin: 0.5rem 0 0 3rem;}
   .proflex .flex p {text-align: center;}
   .proflex .flex p span {display: block;}
-  #content.portfolio section .secWrap .bg_gsky .searchBox fieldset {flex-flow: column;}
-  #content.portfolio section .secWrap .bg_gsky .searchBox fieldset >* {margin:0 0 1rem;}
-  #content.portfolio section .secWrap .bg_gsky .searchBox fieldset >*:last-child {margin:0;}
-  #content.portfolio section .secWrap .bg_gsky .searchBox .selectBox .select {width:100%;}
+  #content.portfolio section .secWrap .bg_gsky .searchBox fieldset,
+  .popup .popup-content .tabWrap .bg_gsky .searchBox fieldset {flex-flow: column;}
+  #content.portfolio section .secWrap .bg_gsky .searchBox fieldset >*,
+  .popup .popup-content .tabWrap .bg_gsky .searchBox fieldset >* {margin:0 0 1rem;}
+  #content.portfolio section .secWrap .bg_gsky .searchBox fieldset >*:last-child,
+  .popup .popup-content .tabWrap .bg_gsky .searchBox fieldset >*:last-child {margin:0;}
+  #content.portfolio section .secWrap .bg_gsky .searchBox .selectBox .select,
+  .popup .popup-content .tabWrap .bg_gsky .searchBox .selectBox .select {width:100%;}
 
   /* mypage */
   .myBox h5 {margin:0 0 2rem;}
@@ -863,11 +962,36 @@
   .serviceBox .payInput .input_box {flex-flow: column; align-items: flex-start;}
   .serviceBox .payInput .input_box .selectBox {margin-top:1rem;}
   .serviceBox h2 {font-size: 2.4rem;}
+
+  /* popup */
+  .popupWrap .popup .popup-wrap.flex_sb {gap: 1.5rem;}
+  .popupWrap .popup .popup-wrap.flex_sb .popBox {padding: 1.5rem 2rem; width: -webkit-fill-available; align-items: center; flex-flow: row;}
+  .popupWrap .popup .popup-wrap.flex_sb .popBox ,
+  .popupWrap .popup .popup-wrap.flex_sb .popBox .item { align-items: center; flex-flow: row;}
+  .popupWrap .popup .popup-wrap.flex_sb .popBox .item img {margin-right:.5rem;}
+  .popup .popup-content .tabWrap .bg_gsky .btn_4 {width:100%;}
+  .popup .popup-content .tabWrap .bg_gsky {margin:2rem;}
+  .popup .popup-content .tabWrap .tabs {padding:0 2rem; flex-flow: row wrap;} 
+  .tabBtn {font-size: 1.4rem; word-break: break-all; padding: 1.2rem .2rem;}
+  .tab-pane {border-radius: 1rem;}
+  .popup .popup-content .tabWrap .tabs .tabBtn {width:calc(100%/ 4);  padding: 1rem .2rem;}
+  .popup .popup-content .tabWrap .tab-content, .tab-pane {padding:2rem;}
+  .tab-content .btnWrap .selectBox {display: inline-block; width: fit-content; margin-left: auto;}
+  .tab-pane .left.flex {width: -webkit-fill-available; align-items: flex-start; justify-content: space-between;}
+  .tab-pane .btnWrap .left.flex .txt p {text-align: end;}
+  .tab-pane .btnWrap .btnBox.mlAuto {margin:1rem 0 0;}
 }
 @media (max-width: 424px){
   /* mypage */
   .myWrap .myprofile .mystyle {-webkit-grid-template-columns: repeat(2, 1fr); grid-template-columns: repeat(2, 1fr); width: -webkit-fill-available;}
   .myBox .gridCol3 {-webkit-grid-template-columns: 1fr; grid-template-columns: 1fr;}
+
+  /* popup */
+  .tabWrap {height: 500px;}
+  .tab-content .total {font-size: 1.6rem;}
+  .tab-pane .btnWrap .left.flex .txt p,
+  .tab-content .total small {font-size: 1.2rem;}
+  
 }
 @media (max-width: 350px) {  
   h2 {font-size: 2.4rem;}
