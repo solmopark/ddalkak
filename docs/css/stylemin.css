@@ -411,12 +411,12 @@ input[type="date"]:not(:focus):invalid {
 .selectBox select option {padding:1rem; border: 1px solid var(--hover_blue);}
 .selectBox input:focus {border-color:var(--hover_blue); outline: none; color:var(--text_gray);}
 /* selectBox */
-.searchBox .selectBox .select {-webkit-appearance: none; -moz-appearance: none; appearance: none; border:0 none; width:180px; height:-webkit-fill-available; padding:1.2rem 5rem 1.2rem 2rem;  font-size: 1.6rem; color:var(--line_gray2); background: url('../image/search_icon.svg') no-repeat 100% 50%; border:1px solid var(--line_gray2); border-radius: 5px; }
+.searchBox .selectBox .select {-webkit-appearance: none; -moz-appearance: none; appearance: none; border:0 none; width:180px; height:fit-content; padding:1.2rem 5rem 1.2rem 2rem;  font-size: 1.6rem; color:var(--line_gray2); background: url('../image/search_icon.svg') no-repeat 100% 50%; border:1px solid var(--line_gray2); border-radius: 5px; }
 .searchwrap select::-ms-expand{display:none;} 
 .searchBox button{border:0 none; }
 
 /* searchBox */
-.searchBox {width: -webkit-fill-available;}
+.searchBox {width: -webkit-fill-available; height:100%;}
 .searchBox fieldset{border:0 none; vertical-align:top; -webkit-display: flex; display: flex; width:auto;} 
 .searchBox fieldset >* {margin-right:2rem;}
 .searchBox fieldset >*:last-child {margin-right:0;}
