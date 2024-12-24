@@ -922,6 +922,8 @@ popup Style
   /* type2 */
   #content.property.type2 section .secTitle.flex {flex-flow: row wrap; justify-content: flex-start;}
   #content.property.type2 section .secTitle.flex_sb { align-items: flex-start;}
+  #content.property section .secTitle, #content.property section .secTitle.mb30,
+  #content.property.type2 section .secTitle.flex_sb h3 {margin:0 0 1rem !important;}
   #content.property.type2 section .secTitle.flex.mb30 {margin:0 0 2rem;}
   #content.property.type2 section .secTitle.flex.mb30 .selectBox.mr20 {margin: 0 1rem 1rem 0;}
   /* pype4 */
